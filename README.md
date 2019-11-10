@@ -3,6 +3,7 @@ Use AWS resources from outside of AWS with Ansible
 
 ## Files
 AWScre.py      - module, can be run as script
+
 test_awscre.py - unit tests
 
 ## What is the problem?
@@ -35,9 +36,9 @@ The format needed for ansible is
 
     ---
     env_vars:
-    AWS_SECRET_ACCESS_KEY: mzTh1Sj9Btjxucbq//X6Ece1z6U6XE3Cysb+Ntdm
-    AWS_ACCESS_KEY_ID: ASIAXEX3PUBILNYIJHAY
-    AWS_SESSION_TOKEN: sXiACeiyqiPpd5z2wAHvEtmTR7/GGf88yVCJ/epz3StU2cU0y1SJUKo6+gc
+      AWS_SECRET_ACCESS_KEY: mzTh1Sj9Btjxucbq//X6Ece1z6U6XE3Cysb+Ntdm
+      AWS_ACCESS_KEY_ID: ASIAXEX3PUBILNYIJHAY
+      AWS_SESSION_TOKEN: sXiACeiyqiPpd5z2wAHvEtmTR7/GGf88yVCJ/epz3StU2cU0y1SJUKo6+gc
     h2YSsldTlsZzDEBSDubzGKtYur6rmzYZfq+v+KwrUbGobETwn1gvaNd4vg+kEaCg6eNhICisCMRHjrLf
     KYdaikcP9SbUSqQPHwew/F5rtzyWwU5pEle+8uHfYycwY1sSHWOn4bnBA9IpiiJDonTKdnPjWdwuep2E
     9pf7A3fxaPOCb+jss9CoI9YfzPLQ9CQSztqfdhqN4PxYvpXnLSms3Z6SB7cS
@@ -71,10 +72,10 @@ The python script I’ve written to setup the AWS credentials also makes a tweak
 
     ---
     env_vars:
-    ANSIBLE_BECOME_FLAGS: '-H -S -n -E'
-    AWS_SECRET_ACCESS_KEY: mzTh1Sj9Btjxucbq//X6Ece1z6U6XE3Cysb+Ntdm
-    AWS_ACCESS_KEY_ID: ASIAXEX3PUBILNYIJHAY
-    AWS_SESSION_TOKEN: sXiACeiyqiPpd5z2wAHvEtmTR7/GGf88yVCJ/epz3StU2cU0y1SJUKo6+gc
+      ANSIBLE_BECOME_FLAGS: '-H -S -n -E'
+      AWS_SECRET_ACCESS_KEY: mzTh1Sj9Btjxucbq//X6Ece1z6U6XE3Cysb+Ntdm
+      AWS_ACCESS_KEY_ID: ASIAXEX3PUBILNYIJHAY
+      AWS_SESSION_TOKEN: sXiACeiyqiPpd5z2wAHvEtmTR7/GGf88yVCJ/epz3StU2cU0y1SJUKo6+gc
     h2YSsldTlsZzDEBSDubzGKtYur6rmzYZfq+v+KwrUbGobETwn1gvaNd4vg+kEaCg6eNhICisCMRHjrLf
     KYdaikcP9SbUSqQPHwew/F5rtzyWwU5pEle+8uHfYycwY1sSHWOn4bnBA9IpiiJDonTKdnPjWdwuep2E
     9pf7A3fxaPOCb+jss9CoI9YfzPLQ9CQSztqfdhqN4PxYvpXnLSms3Z6SB7cS
